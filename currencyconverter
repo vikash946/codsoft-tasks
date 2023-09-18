@@ -1,0 +1,66 @@
+package curruncy;
+import java.util.*;
+
+public class curruncyconverter {
+    //public static int curruncy(int base, int target) {
+    //	return base*target;
+    //}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the base curruncy symbol: ");
+		String basecurr=sc.nextLine();
+		
+		
+		System.out.print(" enter the amount: ");
+		int base=sc.nextInt();
+		//System.out.println("enter the current rate of taget curruncy: ");
+		// target=sc.nextInt()
+		//int converted=curruncy(base,target);
+		
+		
+		
+		float target;
+		System.out.println("\n1.euro \n2.dollor \n3.yuwan \n4.yen \n5.riyal");
+		
+		System.out.print("select the curruncy  in which u want to be changed: ");
+		int n=sc.nextInt();
+		
+		switch (n) {
+		case 1: target=90;
+		        String targetcurr="Euro";
+		        float converted= target/base;
+		        
+		        System.out.println(base+""+basecurr+ " are equals to  "+targetcurr+""+converted);
+		        break;
+		case 2:  target=80;
+                 String targetcurr1="$";
+                 float converted1=base/target;
+                 System.out.println(base+""+basecurr+ " are equals to  "+targetcurr1+""+converted1);
+                 break;
+		case 3:  target=12;
+                 String targetcurr2="Y";
+                 float converted2=base/target;
+                  System.out.println(base+""+basecurr+ " are equals to  "+targetcurr2+""+converted2);
+                  break;
+		case 4:   target=2;
+                  String targetcurr3="Yen";
+                  float converted3=base/target;
+                   System.out.println(base+""+basecurr+ " are equals to  "+targetcurr3+""+converted3);
+                  break; 
+		case 5: target=22;
+                String targetcurr4="riyal";
+                 float converted4=base/target;
+                 System.out.println(base+""+basecurr+ " are equals to  "+targetcurr4+""+converted4);
+                 break;
+		         
+			
+		        
+		        
+		
+		        
+		        
+      		}
+		
+	}
+
+}
